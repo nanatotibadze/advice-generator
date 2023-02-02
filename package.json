@@ -1,0 +1,26 @@
+{
+  "name": "advice-generator-app-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass src/sass/main.scss css/style.css -w",
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "Nanuka Totibadze",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "autoprefixer": "^10.4.13",
+    "build": "^0.1.4",
+    "concat": "^1.0.3",
+    "parcel": "^2.8.3",
+    "postcss-cli": "^10.1.0",
+    "prefix-css": "^0.0.6",
+    "sass": "^1.57.1"
+  },
+  "dependencies": {
+    "run-all": "^1.0.1"
+  }
+}

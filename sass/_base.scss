@@ -1,0 +1,54 @@
+$color-primary-dark-1: hsl(217, 19%, 24%);
+$color-primary-dark-2: hsl(217, 19%, 38%);
+$color-primary-dark-3: hsl(218, 23%, 16%);
+
+$color-green: hsl(150, 100%, 66%);
+$color-primary-light-2: hsl(235, 45%, 61%);
+$color-primary-light-3: hsl(236, 100%, 87%);
+
+$color-white: hsl(0, 0%, 100%);
+
+$font-primary: "Rubik", sans-serif;
+$border-radius: 1.5rem;
+
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px;
+$bp-small: 50em; // 600px;
+$bp-smallest: 23.4em; //375 px;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 50%;
+  }
+}
+
+body {
+  background-color: $color-primary-dark-3;
+  font-family: $font-primary;
+  color: $color-white;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15rem;
+  width: 100vw;
+  height: 100vh;
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 3rem;
+  }
+}

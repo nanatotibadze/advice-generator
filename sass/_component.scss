@@ -1,0 +1,60 @@
+.btn {
+  background-color: $color-green;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  left: 50%;
+  bottom: -2rem;
+  transform: translateX(-50%);
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+
+  @media only screen and (max-width: $bp-small) {
+    // width: 2rem;
+    // height: 2rem;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  &__img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  &:hover {
+    box-shadow: 0 1rem 2rem $color-green;
+
+    &::after {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+  }
+}
+
+.btn__icon {
+  width: 3rem;
+  height: 3rem;
+
+  @media only screen and (max-width: $bp-small) {
+    // width: 2rem;
+    // height: 2rem;
+    width: 2rem;
+    height: 2rem;
+  }
+}

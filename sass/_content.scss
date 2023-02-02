@@ -1,0 +1,71 @@
+.content {
+  width: 40vw;
+  min-height: 45vh;
+  display: flex;
+  background-color: $color-primary-dark-1;
+  border-radius: $border-radius;
+  text-align: center;
+  flex-direction: column;
+  // padding: 5rem;
+  row-gap: 10rem;
+
+  position: relative;
+  align-items: center;
+
+
+
+
+  @media only screen and (max-width: $bp-small) {
+    width: 90vw;
+    min-height: 40vh;
+    row-gap: 7rem;
+  }
+
+  &__title {
+    color: $color-green;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1rem;
+    }
+  }
+
+  &__divider {
+
+
+    width: 35vw;
+    margin-bottom: 5rem;
+
+
+
+
+    @media only screen and (max-width: $bp-small) {
+
+      width: 80vw;
+    }
+  }
+
+  &__text {
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+
+    flex: 2;
+
+    @media only screen and (max-width: $bp-small) {
+
+      font-size: 2rem;
+    }
+  }
+
+  &:not(:last-child) {
+    padding: 5rem;
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 2rem;
+    }
+  }
+}
