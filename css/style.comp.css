@@ -52,8 +52,8 @@ body {
 @media only screen and (max-width: 50em) {
   .content {
     width: 90vw;
-    min-height: 40vh;
-    row-gap: 7rem;
+    min-height: 30vh;
+    row-gap: 6rem;
   }
 }
 .content__title {
@@ -75,6 +75,7 @@ body {
 @media only screen and (max-width: 50em) {
   .content__divider {
     width: 80vw;
+    margin-bottom: 3rem;
   }
 }
 .content__text {
@@ -110,16 +111,14 @@ body {
   display: grid;
   place-content: center;
   cursor: pointer;
+  justify-content: center;
+  align-items: center;
 }
 @media only screen and (max-width: 50em) {
   .btn {
     width: 4rem;
     height: 4rem;
   }
-}
-.btn__img {
-  width: 4rem;
-  height: 4rem;
 }
 .btn::after {
   content: "";
