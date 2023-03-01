@@ -25,4 +25,5 @@ Users should be able to:
 - Sass
 - Flexbox
 - CSS Grid
-- Javascript;
+- Javascript
+- API
